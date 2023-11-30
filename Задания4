@@ -1,0 +1,71 @@
+#1
+a = int(input('Введите число'))
+b = int(input('Введите число (должно быть больше первого или равно ему)'))
+print(a)
+while a < b:
+    a += 1
+    print(a)
+#2
+a = int(input('Введите число '))
+b = int(input('Введите второе '))
+while a != b:
+    print(a)
+    if a < b:
+        a += 1
+    elif b < a:
+        a -= 1
+print(b)
+#3
+a = int(input('Введите a '))
+b = int(input('Введите b, должно быть меньше a '))
+while a > b:
+    if a % 2 != 0:
+        print(a)
+    a -= 1
+if b % 2 != 0:
+        print(b)
+#4
+n = int(input("Введите количество чисел: "))
+c = 0
+
+for i in range(n):
+    b = int(input('Введите каждое из чисел: '))
+    c += b
+print(c)
+#5
+z = int(input('Введите число n '))
+x = 0
+for c in range(1, z + 1):
+    x += c ** 3
+print(x)
+#6
+n = int(input('Введите число'))
+c = 1
+for i in range(1, n + 1):
+    c *= i
+print (c)
+#7
+n = int(input('Введите число n '))
+z = 0
+x = 1
+for i in range(1, n + 1):
+    x *= i
+    z += x
+print(z)
+#8
+n = int(input("Введите число n (n меньше или равно 9): "))
+for i in range(1, n + 1):
+    for z in range(1, i + 1):
+        print(z, end="")
+    print()
+#9
+n = int(input("Введите количество чисел Фибоначчи: "))
+a = 0
+b = 1
+s = 0
+for i in range(n):
+    s += a
+    a
+    b = b
+    a + b
+print(i)
