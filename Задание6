@@ -1,0 +1,11 @@
+line = input('Введите строку')
+line.split(' ')
+
+def word():
+    skolko = 0
+    for bet in line:
+        if bet == 'т':
+            skolko += 1
+    print(skolko)
+
+word()
