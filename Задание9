@@ -1,0 +1,19 @@
+MATRIX = [
+        [1,6,3],
+        [4,8,2],
+        [7,9,4]
+        ]
+
+def 1(matrix):
+    result = []
+    for i in matrix:
+        result.append(max(i))
+    return ', '.join(map(str,result))
+
+def 2(matrix):
+    result = []
+    for i in zip(*matrix):
+        result.append(min(i))
+    return ', '.join(map(str,result))
+
+print(f'Макс знач в строках: {1(MATRIX)}\nМин знач в столбах: {2(MATRIX)}')
