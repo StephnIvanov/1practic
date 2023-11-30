@@ -1,0 +1,45 @@
+#1
+>>> print('Курс основы проммирования начался')
+#2
+>>> a = 16823
+>>> b = 12302
+>>> c = 3092
+>>> results = a * b % c
+>>> print(results)
+#3
+age = int(input('Введите возраст '))
+name = input('Введите имя ')    
+i = 16 - age    
+if age >= 16:
+    print('Поздравляем вы поступили в ВГУИТ')
+elif age < 16:
+    print('Сначала нужно окончить школу')
+elif age < 16:
+    print(i)
+if name == ('Иван'):
+    print('Не люблю Иванов')        
+if age >= 0 and age < 75:
+    print('Ты хорош')   
+#4
+seconds = int(input('Введите колличество секунд '))
+day = seconds // (3600*24)
+hours = seconds // 3600
+minutes = seconds // 60 
+second = seconds % 60
+print(day,hours,minutes,second)
+#5
+n = int(input('Ввелите число '))
+numeric = n + n**2 + n**3 + n**4 + n**5
+print(numeric)
+#6
+a=2
+b=4
+a,b = b,a
+print(a)
+print(b)
+#7
+number = int(input('Введите число'))
+if number % 2 ==7 0:
+    print('четное')
+else:
+    print('нечетное')
