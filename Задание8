@@ -1,0 +1,35 @@
+def sum_of_digits(n):
+    return sum(int(digit)for digit in str(n))
+def find_steps_to_zero(number):
+    steps = 0
+    while number > 0:
+        number -= sum_of_digits(number)
+        steps += 1
+    return steps
+n = int(input("Введите заданное число: "))
+steps_to_zero = find_steps_to_zero(n)
+print(steps_to_zero)
+
+
+
+import math
+import random
+def massiv(array1,array2,array3):
+    def procedura(array):
+        sum1 = sum(array)
+        srznach = sum1 / len(array)
+        proizv = math.prod(array)
+        return proizv, srznach
+    proizv1, srznach1 = procedura(array1)
+    proizv2, srznach2 = procedura(array2)
+    proizv3, srznach3 = procedura(array3)
+    print('Произведение 1:', proizv1)
+    print('Среднее значение 1:', srznach1)
+    print('Произведение 2:', proizv2)
+    print('Среднее значение 2:', srznach2)
+    print('Произведение 3:', proizv3)
+    print('Среднее значение 3:', srznach3)
+array1 = [random.randint(1,10) for i in range(10)]
+array2 = [random.randint(1,10) for i in range(10)]
+array3 = [random.randint(1,10) for i in range(10)]
+massiv(array1,array2,array3)
