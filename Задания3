@@ -1,0 +1,82 @@
+#1
+a = int(input("Введите число 1:"))
+b = int(input("Введите число 2:"))
+c = int(input("Введите число 3:"))
+print(a + b + c)
+#2
+a = int(input("Введите длину 1 катета треугольника:"))
+b = int(input("Введите длину 2 катета треугольника:"))
+s = a * b * 0.5
+print('Площадь прямоугольного треугольника равна:', s)
+#3
+n = int(input("Введите сколько прошло минут с начала суток:"))
+ch = (n // 60) % 24
+minutes = n % 60
+if n > 1440:
+    print('Error')
+else:
+    print(ch,':',minutes)
+#4
+seconds = int(input('Введите колличество секунд '))
+day = seconds // (3600*24)
+hours = seconds // 3600
+minutes = seconds // 60 
+second = seconds % 60
+print(day,hours,minutes,second)
+#5
+x = int(input('Введите 1 число '))
+z = int(input('Введите 2 число '))
+y = int(input('Введите 3 число '))
+def null():
+    if x < y and x < z:
+        print(x)
+    elif y < z and y < z:
+        print(y)
+    elif z < y and z < x:
+        print(z)
+        return
+null()
+#6
+a=2
+b=4
+a,b = b,a
+print(a)
+print(b)
+#7
+year = int(input('Введите год: '))
+def vis(year):
+    if ((year % 4 == 0) and (year % 100 != 0)) or (year % 400 == 0):
+        print('Да')
+    else:
+        print('Нет')
+        return
+c = vis(year)
+print(c)
+#8
+a = int(input('Введите первое число: '))
+b = int(input('Введите второе число: '))
+c = int(input('Введите третье число: '))
+def odinak(a,b,c):
+    if a == b == c:
+        print('3')
+    elif a == b or b == c or a == c:
+        print('2')
+    else:
+        print('3')
+        return
+c = odinak(a,b,c)
+print(c)
+#9
+a = int(input('Введите первое число: '))
+b = int(input('Введите второе число: '))
+c = int(input('Введите третье число: '))
+def odinak(a,b,c):
+    if a == b == c:
+        print('3')
+    elif a == b or b == c or a == c:
+        print('2')
+    else:
+        print('3')
+        return
+c = odinak(a,b,c)
+print(c)
