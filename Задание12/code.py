@@ -1,4 +1,14 @@
 #-- coding: utf-8--
+#a
+def schet(n):
+    if n == 0:
+        return 0
+    else:
+        return n % 10 + schet(n // 10)
+
+A = int(input('введите число'))
+result = schet(A)
+print(result)
 
 #b
 import math
