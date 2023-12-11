@@ -19,12 +19,12 @@ def repos_inf(repo,label):
         txt = f'Erorr: {err}'
     label.config(text=txt)
 
-def main_ui():
+def main():
     window = tk.Tk()
     window.title('GitHub json parser')
 
     repo = tk.Entry(window)
-    repo_btn = tk.Button(window, text='Parse', command=lambda: repos_inf(repo.get(),output))
+    parse_btn = tk.Button(window, text='Parse', command=lambda: repos_inf(repo.get(),output))
     txt = tk.Label(window, text='Укажите имя репозитория')
     output = tk.Label(window)
 
@@ -35,4 +35,4 @@ def main_ui():
 
     window.mainloop()
 
-main_ui()
+main()
